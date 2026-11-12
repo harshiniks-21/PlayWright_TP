@@ -32,7 +32,7 @@ await page.goto("https://www.amazon.in/");
 await page.getByRole("link",{name:'Amazon Pay'}).first().click();
 })
 //?7.getByTestId()
-test.only("GetBytestid",async({page})=>{
+test("GetBytestid",async({page})=>{
     await page.goto("https://www.saucedemo.com/");
     await page.getByTestId("password").fill("pseudo");
 })
