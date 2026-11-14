@@ -1,5 +1,5 @@
 //! Playwright provides annotations to manage test execution for various scenarios:Skipping,Focusing,Marking slow,or expecting Failures.
-//? test.skip
+//?test.skip
 //?test.only
 //?test.fail
 //?test.fixme=>known error is present and fix is required and it will not get executed(it will get skippeda nd will show result as skipped for that particular test).
@@ -14,7 +14,7 @@ test("Annotation-2",async({page})=>{
     console.log("Test-Two")
 })
 test("Annotation-3",async({page})=>{
-    test.slow();//Marks a test as "slow". Slow test will be given triple the default timeou
+    test.slow();//Marks a test as "slow". Slow test will be given triple the default timeout
     console.log("Test-Three")
 })
 //? conditional skip.
