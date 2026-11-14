@@ -1,6 +1,6 @@
-//! Browser Controls in Playwright refer to a set of commanda or methods used to programatically control and interact with the browser during automated testing.
+//! Browser Controls in Playwright refer to a set of commands or methods used to programatically control and interact with the browser during automated testing.
 //browser controls
-//1. browser.newContext()=>Creates a new Browser context(like a fresh browser profile)
+//1.browser.newContext()=>Creates a new Browser context(like a fresh browser profile)
 //2.browser.close()=>by default the tab will get close after execution in JS but when we created a multiple tabs and wants to close specific tab we can use this method.
 //3.page.goto
 //4.page.reload

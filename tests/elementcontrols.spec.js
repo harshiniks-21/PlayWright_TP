@@ -54,8 +54,4 @@ test("ElementControl",async({page})=>{
     await page.goto("https://demoapps.qspiders.com/ui/checkbox?sublist=0")
     await page.locator("input#domain_b").waitFor({state:'visible',timeout:3000})
 
-
-
-
-
     })
