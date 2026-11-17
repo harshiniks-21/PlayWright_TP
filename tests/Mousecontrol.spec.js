@@ -55,7 +55,7 @@ import{test} from "@playwright/test"
 test.only("Drag and Drop",async({page})=>{
 //     await page.goto("https://demoapps.qspiders.com/ui/dragDrop?sublist=0");
 //     await page.locator("//div[text()='Drag Me']").hover()
-//     await page.mouse.down();  
+//     await page.mouse.down();
 //     await page.mouse.move(5000,1000);
 //     await page.mouse.up();
 //     //Drag & Drop to Target.
@@ -67,9 +67,6 @@ test.only("Drag and Drop",async({page})=>{
 //     await page.waitForTimeout(2000);
 //     await page.mouse.up()
 //         await page.waitForTimeout(2000);
-
-    //div[text()='Mobile Accessories']
-   // div[text()='Mobile Accessories']/../../div[1]
     // //* DRAG & DROP BY ELEMENT LOCATION.
     await page.goto("https://demoapps.qspiders.com/ui/dragDrop/dragToCorrect?sublist=2");
     await page.locator("//div[text()='Mobile Charger']").hover();
@@ -84,5 +81,6 @@ test.only("Drag and Drop",async({page})=>{
     await page.waitForTimeout(2000);
     let target=await page.locator("//div[text()='Mobile Accessories']/parent::div");
     await page.waitForTimeout(2000);
+    await source.dragTo(target)
     await page.waitForTimeout(2000);
 })
