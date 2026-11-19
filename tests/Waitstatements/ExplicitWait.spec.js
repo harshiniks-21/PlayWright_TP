@@ -6,3 +6,5 @@ test("ExplicitWait",async({page})=>{
     let a=await page.locator('//div[@role="row"]',{hasText: "for woman"}).allTextContents()
     console.log(a)
 })
+
+    

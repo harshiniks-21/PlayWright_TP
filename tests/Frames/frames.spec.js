@@ -11,7 +11,6 @@ import{test,expect} from "@playwright/test"
 //     console.log(await page.title())
 // })
 
-
 test("framebyurl",async({page})=>{
     await page.goto("https://ui.vision/demo/webtest/frames/");
      let frame1 = page.frame({
@@ -21,14 +20,14 @@ console.log(frame1)
        await frame1.locator("//input[@name='mytext1']").fill("asdfghj")
        await expect(await frame1.locator("//input[@name='mytext1']").inputValue()).toContain('asdfghj');
 
-//
+
  })
  //! using frame locator:
  //src="frame_1.html"
 //  test.only("framelocator",async({page})=>{
 //      await page.goto("https://ui.vision/demo/webtest/frames/");
-//     //  let store= page.frameLocator('//frame[@src="frame_1.html"]').locator('//input[@name="mytext1"]')
-//     //  await store.fill("HII")
+    //  let store= page.frameLocator('//frame[@src="frame_1.html"]').locator('//input[@name="mytext1"]')
+    //  await store.fill("HII")
     
 
 //     //!A3
@@ -44,5 +43,4 @@ console.log(frame1)
      await frame3.locator("//input[@name='mytext3']").fill("Frame3");
      let radio=await frame3.frameLocator("//iframe").locator('(//div[@class="AB7Lab Id5V1"])[1]')
       await radio.click();
-     
 })
